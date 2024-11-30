@@ -1,0 +1,5 @@
+// Step 1: Get email from the Reseller
+// Step 2: Email Service working and creating Opportunity
+// Step 3: Trigger checks if the Reseller is exist or not by checking Reseller Emails on the Opportunity
+// Step 4: If there is no Reseller and email matching, sending email for registering information
+// Step 5: Email response Trigger the email services , creates new Reseller  

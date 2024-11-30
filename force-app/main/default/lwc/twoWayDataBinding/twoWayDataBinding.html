@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Two Way Data Binding">
+        <div class="slds-var-m-around_medium">
+            <lightning-input 
+            type="text"
+            label="Enter some value"
+            onchange={changeHandler}
+            value= {course}
+
+            >
+
+            </lightning-input>
+            <div>
+                Hello my name is {fullName},and I started a {course} course
+            </div>
+        </div>
+
+    </lightning-card>
+</template>

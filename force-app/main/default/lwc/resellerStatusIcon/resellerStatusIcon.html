@@ -1,0 +1,10 @@
+<template>
+    <lightning-record-view-form record-id={recordId} object-api-name="Opportunity">
+        <lightning-output-field field-name="Reseller__c"></lightning-output-field>
+    </lightning-record-view-form>
+
+    <!-- Eğer resellerStatus true ise tik işareti göster -->
+    <template if:true={resellerStatus}>
+        <lightning-icon icon-name="action:check" alternative-text="Approved" ></lightning-icon>
+    </template>
+</template>

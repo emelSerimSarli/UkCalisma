@@ -1,0 +1,15 @@
+<apex:page renderAs="pdf" controller="QuotePDFController">
+    <apex:pageBlock title="Quote PDF">
+        <apex:pageBlockSection title="Quote Details" columns="1">
+            <apex:outputField value="{!quote.Name}"/>
+            <apex:outputField value="{!quote.Opportunity.Name}"/>
+            <apex:outputField value="{!quote.TotalPrice}"/>
+            <apex:outputField value="{!quote.Status}"/>
+            <apex:outputField value="{!quote.ExpirationDate}"/>
+            <apex:outputField value="{!quote.Email}"/>
+
+         
+         
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
