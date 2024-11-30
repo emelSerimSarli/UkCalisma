@@ -10,14 +10,14 @@ Purpose : When an e-mail comes to the system, create a new automatic reseller re
         List<Reseller__c> newResellers = new List<Reseller__c>();
         //List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
 
-        for (Case c : caseList) {
+        for (Case cc : caseList) {
             // Sadece Email-to-Case kayıtları üzerinde işlem yapın
             // Supplied email keeps the senders emails.
-            if (c.Origin == 'Email' && c.SuppliedEmail != null) {
+            if (cc.Origin == 'Email' && cc.SuppliedEmail != null) {
                 // Reseller kaydı oluşturma
                 Reseller__c reseller = new Reseller__c();
-                reseller.Email__c = c.SuppliedEmail;
-                reseller.Name = 'Reseller from Case ' + c.CaseNumber;
+                reseller.Email__c = cc.SuppliedEmail;
+                reseller.Name = 'Reseller from Case ' + cc.CaseNumber;
                 //reseller.Description__c = c.Description;
                 newResellers.add(reseller);
 
